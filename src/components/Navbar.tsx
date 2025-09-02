@@ -4,11 +4,11 @@ import { CiLinkedin } from "react-icons/ci";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-[#111418] h-12 text-white flex items-center justify-between px-4 border-b-2 border-gray-700">
+    <div className="sticky top-0 bg-[#111418] h-12 text-white flex items-center justify-between px-4 border-b-2 border-gray-700 z-10">
       <h1 className="text-xl font-bold tracking-tight">Melihcan Yıldız</h1>
       <ul className="flex items-center gap-4 text-gray-400 hidden md:flex">
         <li className="text-gray-300 hover:text-white transition-colors">
-          About
+          <a href="#about">About</a>
         </li>
         <li className="text-gray-300 hover:text-white transition-colors">
           Projects
