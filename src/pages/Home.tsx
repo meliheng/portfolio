@@ -6,12 +6,14 @@ import Contact from '../components/Contact.tsx'
 import Footer from '../components/Footer.tsx'
 export default function Home() {
     return (
-        <div className="bg-[#111418] min-h-screen w-full">
+        <>
             <Navbar />
-            <About />
-            <Projects />
-            <Contact />
+                <main className="bg-[#111418] min-h-screen w-full">
+                    <About />
+                    <Projects />
+                    <Contact />
+                </main>
             <Footer />
-        </div>
+        </>
     )
 }
