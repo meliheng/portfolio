@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div id="about" className="flex flex-col md:flex-row items-center justify-center gap-10 pt-[48px]">
             <img src="https://www.serhatsirin.com/wp-content/uploads/2022/09/LinkedinyenibiriskariyercvloginiskurSecretCVelemannetcom_profil_fotografi_profile_photos_shoot.jpg" 
-            alt="Profile" className="rounded-full w-48 h-48 mt-4" />
+            alt="Profile" className="rounded-full w-48 h-48 mt-4 object-cover" />
             <div className="flex flex-col items-start md:w-1/2 px-4">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-2 text-white">Melihcan Yıldız</h1>
             <h2 className="text-2xl md:text-3xl font-medium text-[#1173d4] mb-4">Software Engineer</h2>

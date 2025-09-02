@@ -11,17 +11,23 @@ export default function Navbar() {
           <a href="#about">About</a>
         </li>
         <li className="text-gray-300 hover:text-white transition-colors">
-          Projects
+          <a href="#projects">Projects</a>
         </li>
         <li className="text-gray-300 hover:text-white transition-colors">
-          Contact
+          <a href="#contact">Contact</a>
         </li>
-        <div className="w-9 h-9 flex items-center justify-center rounded-full bg-[#283039] text-white">
+       <div className="flex items-center gap-2">
+       <div className="w-9 h-9 flex items-center justify-center rounded-full bg-[#283039] text-white">
+          <a href="https://github.com/meliheng" target="_blank" rel="noopener noreferrer">
           <FiGithub />
+          </a>
         </div>
         <div className="w-9 h-9 flex items-center justify-center rounded-full bg-[#283039] text-white">
+          <a href="https://www.linkedin.com/in/melihcan-yildiz/" target="_blank" rel="noopener noreferrer">
           <CiLinkedin />
+          </a>
         </div>
+       </div>
       </ul>
       <button className="md:hidden flex items-center" onClick={() => setIsOpen(!isOpen)}>
         <svg
@@ -45,13 +51,18 @@ export default function Navbar() {
         </svg>
       </button>
        {/* Açılır Menü (mobil) */}
-       {isOpen && (
-        <ul className="top-full left-0 w-full bg-gray-800 flex flex-col gap-4 p-4 md:hidden">
-          <li>Home</li>
-          <li>Projects</li>
-          <li>Contact</li>
+      
+        <ul className={`absolute top-full left-0 w-full bg-gray-800 flex flex-col gap-4 p-4 md:hidden overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-60 py-4" : "max-h-0 py-0"}`}>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
-      )}
     </div>
   );
 }

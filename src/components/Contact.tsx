@@ -1,7 +1,7 @@
 import React from 'react'
 export default function Contact() {
     return (
-        <div className="mt-12 flex flex-col items-center justify-center">
+        <div id="contact" className="mt-12 flex flex-col items-center justify-center">
             <h1 className="text-3xl md:text-4xl font-bold tracking-tighter text-center text-white">Contact Me</h1>
             <div className="flex flex-col items-start justify-center gap-2 max-w-full md:max-w-screen-sm w-full px-6 mb-8">
                 <label className="text-sm font-medium text-gray-300 mb-2">Email</label>
